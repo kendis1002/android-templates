@@ -1,7 +1,7 @@
 package co.nimblehq.sample.compose.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 
 @Composable
@@ -21,7 +21,7 @@ fun ComposeTheme(
         LocalAppColors provides colors
     ) {
         MaterialTheme(
-            colors = colors.themeColors,
+            colorScheme = colors.themeColors,
             typography = typography,
             shapes = shapes,
             content = content

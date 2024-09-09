@@ -13,6 +13,8 @@ plugins {
 val keystoreProperties = rootDir.loadGradleProperties("signing.properties")
 
 android {
+    namespace = "co.nimblehq.sample.compose"
+
     signingConfigs {
         create(BuildType.RELEASE) {
             // Remember to edit signing.properties to have the correct info for release build.
@@ -72,12 +74,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
     composeOptions {
@@ -86,6 +88,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     packagingOptions {
@@ -129,7 +132,9 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling")
     implementation("androidx.compose.foundation:foundation")
-    implementation("androidx.compose.material:material")
+    implementation("androidx.compose.material3:material3:${Versions.COMPOSE_VERSION}")
+
+    implementation("io.coil-kt:coil-compose:${Versions.COIL_VERSION}")
 
     implementation("androidx.navigation:navigation-compose:${Versions.COMPOSE_NAVIGATION_VERSION}")
     implementation("com.google.accompanist:accompanist-permissions:${Versions.ACCOMPANIST_VERSION}")

@@ -6,6 +6,8 @@ plugins {
 }
 
 android {
+    namespace = "co.nimblehq.sample.compose.data"
+
     compileSdk = Versions.ANDROID_COMPILE_SDK_VERSION
     defaultConfig {
         minSdk = Versions.ANDROID_MIN_SDK_VERSION
@@ -28,12 +30,12 @@ android {
     }
 
     compileOptions {
-        targetCompatibility = JavaVersion.VERSION_11
-        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
     lintOptions {

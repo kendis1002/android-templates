@@ -1,9 +1,9 @@
 object Versions {
-    const val BUILD_GRADLE_VERSION = "7.4.2"
+    const val BUILD_GRADLE_VERSION = "8.2.1"
 
-    const val ANDROID_COMPILE_SDK_VERSION = 33
+    const val ANDROID_COMPILE_SDK_VERSION = 34
     const val ANDROID_MIN_SDK_VERSION = 24
-    const val ANDROID_TARGET_SDK_VERSION = 33
+    const val ANDROID_TARGET_SDK_VERSION = 34
 
     const val ANDROID_VERSION_CODE = 1
     const val ANDROID_VERSION_NAME = "3.30.0"
@@ -14,12 +14,14 @@ object Versions {
     const val ANDROID_CRYPTO_VERSION = "1.0.0"
     const val ANDROIDX_CORE_KTX_VERSION = "1.10.1"
     const val ANDROIDX_DATASTORE_PREFERENCES_VERSION = "1.0.0"
-    const val ANDROIDX_LIFECYCLE_VERSION = "2.6.1"
+    const val ANDROIDX_LIFECYCLE_VERSION = "2.7.0"
 
     const val CHUCKER_VERSION = "3.5.2"
     const val COMPOSE_BOM_VERSION = "2023.04.01"
     const val COMPOSE_COMPILER_VERSION = "1.4.7"
     const val COMPOSE_NAVIGATION_VERSION = "2.5.3"
+    const val COMPOSE_VERSION = "1.3.0"
+    const val COIL_VERSION = "2.7.0"
 
     const val HILT_VERSION = "2.44"
     const val HILT_NAVIGATION_COMPOSE_VERSION = "1.0.0"
